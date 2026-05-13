@@ -12,6 +12,7 @@ type ProductSummeryWithColor=Required<Product>;
 type ProductWithColor=Required<Product>;
 type OptionalProduct=Partial<Product>;
 type JustReadOnlyProduct=Readonly<Product>;
+type ProductSummeryWithoutStock1 = Omit<Product, "stock" >;
 
 
 const emptyObj:Record<string,unknown>={}

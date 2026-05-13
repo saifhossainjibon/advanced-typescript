@@ -1,15 +1,15 @@
 // dynamically genaralised kora
 // const fdName: string[] = ["saif", "rafi", "safi"];
-// const fdName: Array<string> = ["saif", "rafi", "safi"];
+// const fdName: Array<string> = ["saif", "rafi", "safi"]; //uporer array ke aivabe o likha jay
 
-// const roll: number[] = [11, 23, 13];
-// const roll: Array<number> = [11, 23, 13];
+// const roll: number[] = [11, 23, 13]; 
 
 // const isEligible: boolean[] = [true, false,true];
 // const isEligible: Array<boolean> = [true, false,true];
 
 // type GenericArray = Array< string | number | boolean>
 type GenericArray<value> = Array<value>;
+
 const fdName: GenericArray<string> = ["saif", "rafi", "safi"];
 const roll: GenericArray<number> = [11, 23, 13];
 const isEligible: GenericArray<boolean> = [true, false, true];

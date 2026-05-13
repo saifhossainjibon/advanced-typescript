@@ -9,8 +9,7 @@ type RichPeopleVehicle={
 type MyVehicle1='bike' | 'car' | 'cng';
 type MyVehicle2=keyof RichPeopleVehicle;
 
-const myVehicle :MyVehicle2='bike'
-
+const myVehicle : MyVehicle2='bike'
 
 type UserType={
     id: number;
@@ -19,7 +18,6 @@ type UserType={
         city: string;
     }
 }
-
 // upore amra keyof somporke jansi niche amra janbo keyof constraint 
 const user:UserType={
     id: 2222,
