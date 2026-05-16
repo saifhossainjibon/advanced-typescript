@@ -32,12 +32,20 @@ const myName= user['name'];
 const myAddress= user['address'];
 // console.log({myId,myName,myAddress})
 
+// normal developer hole aivabe kortam
+// const getPropertyFromObjNormal =(obj: object,key:string)=>{
+//     return obj[key]; //aikhne akta error dicce je amra je object ta dicci tar moddhe 
+//     // ki "key" ta ace kina saita typescript bhujhte parce an
+// } 
+
 // const getPropertyFromObj = (obj:UserType, key:keyof UserType)=>{
-    const getPropertyFromObj =<X> (obj:X, key:keyof X)=>{
-    return obj[key] // aikhe error dewer karon holo amra je aikhne obj er vitore jai value ta 
+const getPropertyFromObj =<X> (obj:X, key:keyof X)=>{
+    return obj[key]
+    } 
+    // aikhe error dewer karon holo amra je aikhne obj er vitore jai value ta 
     // pathabo saita ki ase nake saita sure hote parce na aijonno amra ikhne keyOf constaints use korbo
     //  aijonno upore amra type define kore dibo
-} 
+
 const result1=getPropertyFromObj(user,"name") 
 console.log(result1)
 
